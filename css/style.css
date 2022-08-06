@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  color: aqua;
+  text-align: center;
+  background: rebeccapurple;
+  padding: 10px 0;
+  margin: 0;
+}
+
+main  {
+  background: url(../image/gallery-05.jpg);
+  width: 100vw;
+  min-height: calc(100vh - 60px);
+  height: auto;
+}
+
+.dis {
+  text-align: center;
+  color: rgb(255, 8, 255);
+  padding: 30px 0;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.list {
+display: block;
+border: 1px solid aqua;
+width: 100px;
+margin: 10px auto;
+padding: 10px;
+color: aqua;
+outline: none;
+}
+
+.next,
+.nextn {
+  display: block;
+  width: 100px;
+  margin: 30px auto;
+  padding: 5px;
+  background:rgb(255 8 255 / 80%);
+  color:rgb(0, 0, 0);
+  outline: none;
+  border: none;
+}
+
+.linegallary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+
+.linegallary img { 
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s;
+  -webkit-transition:0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.linegallary img:hover {
+  transform: scale(1.2) rotate(-5deg);
+  -webkit-transform: scale(1.2) rotate(-5deg);
+  -moz-transform: scale(1.2) rotate(-5deg);
+  -ms-transform: scale(1.2) rotate(-5deg);
+  -o-transform: scale(1.2) rotate(-5deg);
+}
+
+/* hbd page */
+
+main .info h1 {
+  text-align: center;
+  margin: 50px 0 0;
+  color: aqua;
+}
+
+.down {
+  width: 300px;
+  margin: 150px auto 0;
+  display: flex;
+  gap: 30px;
+}
+
+.down div {
+  border: 1px solid aqua;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.down div:hover {
+  border-color:rgb(255, 8, 255);
+}
+
+.down p {
+  color:rgb(255, 8, 255);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.down span {
+  color: aqua;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 5px 0 0;
+}
