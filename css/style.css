@@ -83,11 +83,14 @@ main .info h1 {
 .down {
   width: 300px;
   margin: 150px auto 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
   gap: 30px;
 }
 
 .down div {
+  width: fit-content;
+  margin: 0 auto;
   border: 1px solid aqua;
   padding: 5px;
   text-align: center;
